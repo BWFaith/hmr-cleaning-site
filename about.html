@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <script>
+      try {
+        if (
+          sessionStorage.getItem("curt") ||
+          matchMedia("(prefers-reduced-motion: reduce)")
+            .matches
+        )
+          document.documentElement.classList.add("nocurt");
+        else sessionStorage.setItem("curt", "1");
+      } catch (e) {}
+    </script>
+    <title>
+      About the Founder | HMR Luxury Cleaning LLC
+    </title>
+    <meta
+      name="description"
+      content="Meet the founder and CEO of HMR Luxury Cleaning LLC, ten years in business serving Austin, TX."
+    />
+    <meta
+      name="theme-color"
+      content="#161310"
+    />
+    <meta
+      property="og:title"
+      content="About the Founder | HMR Luxury Cleaning LLC"
+    />
+    <meta
+      property="og:image"
+      content="images/banner.jpg"
+    />
+    <link
+      rel="icon"
+      href="images/favicon.png"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,600;0,700;1,600&family=Jost:wght@400;500;600&family=Pinyon+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HouseCleaningService",
+        "name": "HMR Luxury Cleaning LLC",
+        "telephone": "+15017771134",
+        "email": "helpmerhondaaustintx@gmail.com",
+        "slogan": "We Clean the Stress Away",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Austin",
+          "addressRegion": "TX",
+          "addressCountry": "US"
+        },
+        "areaServed": [
+          "Austin, TX",
+          "Pflugerville, TX",
+          "Round Rock, TX",
+          "Georgetown, TX",
+          "Del Valle, TX"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a
+      class="skip"
+      href="#main"
+      >Skip to content</a
+    >
+    <div class="promo">
+      Free quotes · Serving Austin &amp; surrounding areas ·
+      <a href="book.html#form">Reserve your clean</a
+      ><button aria-label="Close banner">×</button>
+    </div>
+    <header class="top">
+      <div class="wrap">
+        <a
+          class="logo"
+          href="index.html"
+          ><img
+            src="images/crest-gold.png"
+            alt=""
+            width="144"
+            height="47"
+          /><span
+            ><b>HMR</b><small>Luxury Cleaning</small></span
+          ></a
+        >
+        <button
+          class="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+        <nav
+          id="nav"
+          aria-label="Main"
+        >
+          <a href="index.html">Home</a
+          ><a href="services.html">Services</a
+          ><a href="pricing.html">Pricing</a
+          ><a href="gallery.html">Gallery</a
+          ><a
+            href="about.html"
+            class="on"
+            >About</a
+          ><a href="areas.html">Areas</a
+          ><a href="faq.html">FAQ</a
+          ><a href="contact.html">Contact</a
+          ><a
+            class="btn sm"
+            href="book.html#form"
+            style="margin-left: 10px"
+            >Book now</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero short">
+        <canvas
+          id="fx"
+          aria-hidden="true"
+        ></canvas>
+        <div class="spot"></div>
+        <div class="sweep"></div>
+        <div
+          class="curtain"
+          aria-hidden="true"
+        >
+          <i class="cl"></i><i class="cr"></i
+          ><img
+            src="images/logo-gold.png"
+            alt=""
+          />
+        </div>
+        <div class="wrap">
+          <div>
+            <span
+              class="heroscript in"
+              style="--d: 0.6s"
+              >Founder & CEO</span
+            >
+            <h1 data-split>Meet the founder.</h1>
+            <p
+              class="in lead"
+              style="--d: 1.5s"
+            >
+              Ten years in business, and still hands-on with
+              every home.
+            </p>
+            <div
+              class="in"
+              style="
+                --d: 1.7s;
+                display: flex;
+                gap: 14px;
+                flex-wrap: wrap;
+                margin-top: 26px;
+              "
+            >
+              <a
+                class="btn"
+                href="book.html#form"
+                >Reserve your clean</a
+              ><a
+                class="btn ghost"
+                href="pricing.html#quote"
+                >Instant quote</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec">
+        <div class="wrap two">
+          <div>
+            <div class="gilt rv">
+              <img
+                src="images/ceo-portrait.jpg"
+                alt="Founder and CEO of HMR Luxury Cleaning holding a gold clipboard"
+                loading="lazy"
+                width="900"
+                height="1205"
+              />
+            </div>
+          </div>
+          <div>
+            <div class="orn l">◆</div>
+            <span class="eyebrow"
+              >Owner · Manager · CEO</span
+            >
+            <h2>
+              We don’t just clean. We reset your space.
+            </h2>
+            <p class="lead">
+              HMR Luxury Cleaning LLC has served Austin and
+              surrounding areas for ten years, with one
+              promise: to clean the stress away.
+            </p>
+            <!-- EDIT: replace with the founder's own story, in her words (name, why she started, what clients say) -->
+            <p>
+              Every home is approached with a color-coded
+              system, a detail-first eye and a calm,
+              professional presence. The result is a space
+              that feels fresh, organized and truly yours.
+            </p>
+            <ul class="tick">
+              <li>10 years in business</li>
+              <li>Trusted &amp; insured</li>
+              <li>
+                Residential, apartment, move-out and
+                construction cleaning
+              </li>
+              <li>
+                Giving back through free cleanings with The
+                Clean Cause Foundation
+              </li>
+            </ul>
+            <a
+              class="btn"
+              href="book.html#form"
+              >Reserve with us</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="sec cream">
+        <div class="wrap">
+          <div class="grid">
+            <div class="gilt rv">
+              <img
+                src="images/ceo-stand.jpg"
+                alt="Founder standing in a living room"
+                loading="lazy"
+              />
+            </div>
+            <div class="gilt rv">
+              <img
+                src="images/ceo-selfie.jpg"
+                alt="Founder smiling in a selfie"
+                loading="lazy"
+                style="aspect-ratio: 1; object-fit: cover"
+              />
+            </div>
+            <div class="card rv">
+              <h3>Find us</h3>
+              <p>
+                📍 Austin, TX &amp; surrounding areas<br />📞
+                <a href="tel:+15017771134">(501) 777-1134</a
+                ><br />✉️
+                <a
+                  href="mailto:helpmerhondaaustintx@gmail.com"
+                  >helpmerhondaaustintx@gmail.com</a
+                ><br />👍
+                <a
+                  href="https://www.facebook.com/search/top?q=HMR%20Luxury%20Cleaning%20LLC"
+                  rel="noopener"
+                  >HMR Luxury Cleaning LLC</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="band">
+      <div class="wrap">
+        <img
+          class="bm"
+          src="images/crest-gold.png"
+          alt=""
+        /><span
+          class="script"
+          style="display: block; font-size: 2.4rem"
+          >We clean the stress away</span
+        >
+        <h2>
+          Come home to <span class="gold">a reset.</span>
+        </h2>
+        <p>
+          Get an instant quote, then reserve your clean in
+          under two minutes.
+        </p>
+        <a
+          class="btn"
+          href="book.html#form"
+          >Reserve your clean</a
+        >
+        <a
+          class="btn ghost"
+          href="tel:+15017771134"
+          >Call (501) 777-1134</a
+        >
+      </div>
+    </section>
+    <footer>
+      <div class="wrap grid">
+        <div>
+          <img
+            src="images/logo-gold.png"
+            alt="HMR Luxury Cleaning LLC logo"
+          />
+          <p>
+            Luxury cleaning for every home. Serving Austin,
+            TX and surrounding areas.
+          </p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <a href="services.html">Services</a><br /><a
+            href="pricing.html"
+            >Pricing</a
+          ><br /><a href="gallery.html">Gallery</a><br /><a
+            href="about.html"
+            >About the founder</a
+          ><br /><a href="areas.html">Service areas</a
+          ><br /><a href="checklist.html"
+            >What is included</a
+          ><br /><a href="faq.html">FAQ</a>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <a href="tel:+15017771134">(501) 777-1134</a
+          ><br /><a
+            href="mailto:helpmerhondaaustintx@gmail.com"
+            >helpmerhondaaustintx@gmail.com</a
+          ><br /><a
+            href="https://www.facebook.com/search/top?q=HMR%20Luxury%20Cleaning%20LLC"
+            rel="noopener"
+            >Facebook · HMR Luxury Cleaning LLC</a
+          >
+        </div>
+        <div>
+          <h3>Legal</h3>
+          <a href="terms.html">Terms of service</a><br /><a
+            href="privacy.html"
+            >Privacy policy</a
+          >
+        </div>
+      </div>
+      <div
+        class="wrap"
+        style="margin-top: 30px"
+      >
+        © <span data-year></span> HMR Luxury Cleaning LLC.
+        All rights reserved.
+      </div>
+    </footer>
+    <div class="sticky">
+      <a
+        class="btn ghost"
+        href="tel:+15017771134"
+        >Call</a
+      ><a
+        class="btn"
+        href="book.html#form"
+        >Book now</a
+      >
+    </div>
+    <div
+      class="modal"
+      id="pop"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Free quote"
+    >
+      <div class="card">
+        <button
+          class="x"
+          aria-label="Close"
+        >
+          ×</button
+        ><span class="script">Before you go</span>
+        <h3>See your price in ten seconds.</h3>
+        <p>No account and no obligation.</p>
+        <a
+          class="btn"
+          href="index.html#quote"
+          >Get my price</a
+        >
+        <button
+          class="btn ghost sm"
+          data-close
+        >
+          No thanks
+        </button>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

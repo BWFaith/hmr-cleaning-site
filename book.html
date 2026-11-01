@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <script>
+      try {
+        if (
+          sessionStorage.getItem("curt") ||
+          matchMedia("(prefers-reduced-motion: reduce)")
+            .matches
+        )
+          document.documentElement.classList.add("nocurt");
+        else sessionStorage.setItem("curt", "1");
+      } catch (e) {}
+    </script>
+    <title>
+      Reserve Your Clean | HMR Luxury Cleaning LLC
+    </title>
+    <meta
+      name="description"
+      content="Get an instant quote and reserve your cleaning online. Your invoice is emailed instantly."
+    />
+    <meta
+      name="theme-color"
+      content="#161310"
+    />
+    <meta
+      property="og:title"
+      content="Reserve Your Clean | HMR Luxury Cleaning LLC"
+    />
+    <meta
+      property="og:image"
+      content="images/banner.jpg"
+    />
+    <link
+      rel="icon"
+      href="images/favicon.png"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,600;0,700;1,600&family=Jost:wght@400;500;600&family=Pinyon+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HouseCleaningService",
+        "name": "HMR Luxury Cleaning LLC",
+        "telephone": "+15017771134",
+        "email": "helpmerhondaaustintx@gmail.com",
+        "slogan": "We Clean the Stress Away",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Austin",
+          "addressRegion": "TX",
+          "addressCountry": "US"
+        },
+        "areaServed": [
+          "Austin, TX",
+          "Pflugerville, TX",
+          "Round Rock, TX",
+          "Georgetown, TX",
+          "Del Valle, TX"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a
+      class="skip"
+      href="#main"
+      >Skip to content</a
+    >
+    <div class="promo">
+      Free quotes · Serving Austin &amp; surrounding areas ·
+      <a href="book.html#form">Reserve your clean</a
+      ><button aria-label="Close banner">×</button>
+    </div>
+    <header class="top">
+      <div class="wrap">
+        <a
+          class="logo"
+          href="index.html"
+          ><img
+            src="images/crest-gold.png"
+            alt=""
+            width="144"
+            height="47"
+          /><span
+            ><b>HMR</b><small>Luxury Cleaning</small></span
+          ></a
+        >
+        <button
+          class="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+        <nav
+          id="nav"
+          aria-label="Main"
+        >
+          <a href="index.html">Home</a
+          ><a href="services.html">Services</a
+          ><a href="pricing.html">Pricing</a
+          ><a href="gallery.html">Gallery</a
+          ><a href="about.html">About</a
+          ><a href="areas.html">Areas</a
+          ><a href="faq.html">FAQ</a
+          ><a href="contact.html">Contact</a
+          ><a
+            class="btn sm"
+            href="book.html#form"
+            style="margin-left: 10px"
+            >Book now</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero short">
+        <canvas
+          id="fx"
+          aria-hidden="true"
+        ></canvas>
+        <div class="spot"></div>
+        <div class="sweep"></div>
+        <div
+          class="curtain"
+          aria-hidden="true"
+        >
+          <i class="cl"></i><i class="cr"></i
+          ><img
+            src="images/logo-gold.png"
+            alt=""
+          />
+        </div>
+        <div class="wrap">
+          <div>
+            <span
+              class="heroscript in"
+              style="--d: 0.6s"
+              >HMR Luxury Cleaning</span
+            >
+            <h1 data-split>Reserve your clean.</h1>
+            <p
+              class="in lead"
+              style="--d: 1.5s"
+            >
+              Build your quote, choose a date, and receive
+              your invoice by email.
+            </p>
+            <div
+              class="in"
+              style="
+                --d: 1.7s;
+                display: flex;
+                gap: 14px;
+                flex-wrap: wrap;
+                margin-top: 26px;
+              "
+            >
+              <a
+                class="btn"
+                href="book.html#form"
+                >Reserve your clean</a
+              ><a
+                class="btn ghost"
+                href="pricing.html#quote"
+                >Instant quote</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec">
+        <div
+          class="wrap two"
+          style="align-items: start"
+        >
+          <form
+            id="form"
+            novalidate
+          >
+            <div class="wiz">
+              <i class="on"></i><i></i><i></i><i></i>
+            </div>
+            <div class="stepbox on card">
+              <h3>I · Your home</h3>
+              <label>Service</label>
+              <div
+                class="seg"
+                id="b-svc"
+              >
+                <button
+                  type="button"
+                  data-v="standard"
+                >
+                  Standard</button
+                ><button
+                  type="button"
+                  data-v="deep"
+                >
+                  Deep</button
+                ><button
+                  type="button"
+                  data-v="reset"
+                >
+                  Reset</button
+                ><button
+                  type="button"
+                  data-v="move"
+                >
+                  Move-in / out</button
+                ><button
+                  type="button"
+                  data-v="construct"
+                >
+                  Remodel
+                </button>
+              </div>
+              <label for="b-prop">Property type</label
+              ><select id="b-prop"></select>
+              <div id="b-sizewrap">
+                <label for="b-bed">Bedrooms</label
+                ><select id="b-bed">
+                  <option>1</option>
+                  <option>2</option>
+                  <option selected>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                </select>
+              </div>
+              <label for="b-bath">Bathrooms</label
+              ><select id="b-bath">
+                <option>1</option>
+                <option selected>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+              </select>
+              <div id="b-sqwrap">
+                <label for="b-sq">Square footage</label
+                ><select id="b-sq"></select>
+              </div>
+              <div id="b-freqwrap">
+                <label>Maintenance schedule</label>
+                <div
+                  class="seg"
+                  id="b-freq"
+                >
+                  <button
+                    type="button"
+                    data-v="once"
+                    class="on"
+                  >
+                    One-time</button
+                  ><button
+                    type="button"
+                    data-v="weekly"
+                  >
+                    Weekly −15%</button
+                  ><button
+                    type="button"
+                    data-v="biweekly"
+                  >
+                    Bi-weekly −10%</button
+                  ><button
+                    type="button"
+                    data-v="monthly"
+                  >
+                    Monthly −5%
+                  </button>
+                </div>
+              </div>
+              <div class="nav2">
+                <button
+                  type="button"
+                  class="btn"
+                  data-next
+                >
+                  Continue
+                </button>
+              </div>
+            </div>
+            <div class="stepbox card">
+              <h3>II · Add-ons</h3>
+              <div id="b-addons"></div>
+              <div class="nav2">
+                <button
+                  type="button"
+                  class="btn ghost"
+                  data-prev
+                >
+                  Back</button
+                ><button
+                  type="button"
+                  class="btn"
+                  data-next
+                >
+                  Continue
+                </button>
+              </div>
+            </div>
+            <div class="stepbox card">
+              <h3>III · Date and details</h3>
+              <div
+                class="grid"
+                style="gap: 12px"
+              >
+                <div>
+                  <label for="b-date">Preferred date</label
+                  ><input
+                    id="b-date"
+                    type="date"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="b-time">Arrival window</label
+                  ><select
+                    id="b-time"
+                    required
+                  >
+                    <option value="">Choose</option>
+                    <option>Morning (8am to 11am)</option>
+                    <option>Midday (11am to 2pm)</option>
+                    <option>Afternoon (2pm to 5pm)</option>
+                  </select>
+                </div>
+              </div>
+              <div
+                class="grid"
+                style="gap: 12px"
+              >
+                <div>
+                  <label for="b-n">Full name</label
+                  ><input
+                    id="b-n"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="b-phone">Phone</label
+                  ><input
+                    id="b-phone"
+                    type="tel"
+                    autocomplete="tel"
+                    required
+                  />
+                </div>
+              </div>
+              <label for="b-email"
+                >Email (your invoice is sent here)</label
+              ><input
+                id="b-email"
+                type="email"
+                autocomplete="email"
+                required
+              />
+              <label for="b-addr">Street address</label
+              ><input
+                id="b-addr"
+                autocomplete="street-address"
+                required
+              />
+              <div
+                class="grid"
+                style="gap: 12px"
+              >
+                <div>
+                  <label for="b-city">City</label
+                  ><input
+                    id="b-city"
+                    autocomplete="address-level2"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="b-zip">ZIP</label
+                  ><input
+                    id="b-zip"
+                    autocomplete="postal-code"
+                    required
+                  />
+                </div>
+              </div>
+              <label for="b-pets">Pets at home?</label
+              ><select id="b-pets">
+                <option>No pets</option>
+                <option>Dog(s)</option>
+                <option>Cat(s)</option>
+                <option>Other pets</option>
+              </select>
+              <label for="b-access">How do we get in?</label
+              ><input
+                id="b-access"
+                placeholder="Lockbox, gate code, someone will be home…"
+              /><label for="b-notes"
+                >Notes or special requests</label
+              ><textarea
+                id="b-notes"
+                rows="3"
+                placeholder="Areas to focus on, scents, anything we should know…"
+              ></textarea
+              ><input
+                class="hp"
+                id="b-hp"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+              />
+              <div class="nav2">
+                <button
+                  type="button"
+                  class="btn ghost"
+                  data-prev
+                >
+                  Back</button
+                ><button
+                  type="button"
+                  class="btn"
+                  data-next
+                >
+                  Review
+                </button>
+              </div>
+            </div>
+            <div class="stepbox card">
+              <h3>IV · Review and confirm</h3>
+              <div id="rev"></div>
+              <label class="addon"
+                ><input
+                  type="checkbox"
+                  id="b-terms"
+                />I agree to the
+                <a
+                  href="terms.html"
+                  target="_blank"
+                  style="color: var(--gold-d)"
+                  >terms of service</a
+                >
+                and confirm the details are correct.</label
+              >
+              <div class="nav2">
+                <button
+                  type="button"
+                  class="btn ghost"
+                  data-prev
+                >
+                  Back</button
+                ><button
+                  class="btn"
+                  id="b-send"
+                  type="submit"
+                >
+                  Reserve and email my invoice
+                </button>
+              </div>
+              <p
+                class="note"
+                id="b-status"
+              ></p>
+            </div>
+            <div
+              class="card ok"
+              id="done"
+              style="display: none"
+            >
+              <span class="script">Thank you</span>
+              <h3>Your request is in.</h3>
+              <p
+                id="done-msg"
+                style="margin-inline: auto"
+              ></p>
+              <div
+                id="done-inv"
+                style="text-align: left; margin: 20px 0"
+              ></div>
+              <div
+                class="nav2"
+                style="justify-content: center"
+              >
+                <button
+                  type="button"
+                  class="btn"
+                  data-print
+                >
+                  Print or save invoice</button
+                ><a
+                  class="btn ghost"
+                  id="done-mail"
+                  href="#"
+                  >Send request by email</a
+                >
+              </div>
+            </div>
+          </form>
+          <aside class="card sticky-sum">
+            <span
+              class="script"
+              style="font-size: 1.7rem"
+              >Your quote</span
+            >
+            <div
+              class="tot"
+              id="s-lines"
+              style="border: 0; margin: 0; padding: 0"
+            ></div>
+            <div class="tot">
+              <div>
+                <span class="from">Estimated total</span>
+              </div>
+              <div
+                class="grand"
+                id="s-total"
+              >
+                $0
+              </div>
+            </div>
+            <p class="note">
+              Free quote. We confirm your final price before
+              the clean. Questions?
+              <a
+                href="tel:+15017771134"
+                style="color: var(--gold-d)"
+                >(501) 777-1134</a
+              >
+            </p>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <section class="band">
+      <div class="wrap">
+        <img
+          class="bm"
+          src="images/crest-gold.png"
+          alt=""
+        /><span
+          class="script"
+          style="display: block; font-size: 2.4rem"
+          >We clean the stress away</span
+        >
+        <h2>
+          Come home to <span class="gold">a reset.</span>
+        </h2>
+        <p>
+          Get an instant quote, then reserve your clean in
+          under two minutes.
+        </p>
+        <a
+          class="btn"
+          href="book.html#form"
+          >Reserve your clean</a
+        >
+        <a
+          class="btn ghost"
+          href="tel:+15017771134"
+          >Call (501) 777-1134</a
+        >
+      </div>
+    </section>
+    <footer>
+      <div class="wrap grid">
+        <div>
+          <img
+            src="images/logo-gold.png"
+            alt="HMR Luxury Cleaning LLC logo"
+          />
+          <p>
+            Luxury cleaning for every home. Serving Austin,
+            TX and surrounding areas.
+          </p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <a href="services.html">Services</a><br /><a
+            href="pricing.html"
+            >Pricing</a
+          ><br /><a href="gallery.html">Gallery</a><br /><a
+            href="about.html"
+            >About the founder</a
+          ><br /><a href="areas.html">Service areas</a
+          ><br /><a href="checklist.html"
+            >What is included</a
+          ><br /><a href="faq.html">FAQ</a>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <a href="tel:+15017771134">(501) 777-1134</a
+          ><br /><a
+            href="mailto:helpmerhondaaustintx@gmail.com"
+            >helpmerhondaaustintx@gmail.com</a
+          ><br /><a
+            href="https://www.facebook.com/search/top?q=HMR%20Luxury%20Cleaning%20LLC"
+            rel="noopener"
+            >Facebook · HMR Luxury Cleaning LLC</a
+          >
+        </div>
+        <div>
+          <h3>Legal</h3>
+          <a href="terms.html">Terms of service</a><br /><a
+            href="privacy.html"
+            >Privacy policy</a
+          >
+        </div>
+      </div>
+      <div
+        class="wrap"
+        style="margin-top: 30px"
+      >
+        © <span data-year></span> HMR Luxury Cleaning LLC.
+        All rights reserved.
+      </div>
+    </footer>
+    <div class="sticky">
+      <a
+        class="btn ghost"
+        href="tel:+15017771134"
+        >Call</a
+      ><a
+        class="btn"
+        href="book.html#form"
+        >Book now</a
+      >
+    </div>
+    <div
+      class="modal"
+      id="pop"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Free quote"
+    >
+      <div class="card">
+        <button
+          class="x"
+          aria-label="Close"
+        >
+          ×</button
+        ><span class="script">Before you go</span>
+        <h3>See your price in ten seconds.</h3>
+        <p>No account and no obligation.</p>
+        <a
+          class="btn"
+          href="index.html#quote"
+          >Get my price</a
+        >
+        <button
+          class="btn ghost sm"
+          data-close
+        >
+          No thanks
+        </button>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
